@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{background-color: hsl(212, 45%, 89%);width: 100vw;height: 100vh;}
+        body{display: flex;justify-content: center;align-items: center;}
+        body{font-family: "Outfit";font-size: 15px;position: relative;}
+        .box {
+            width: 400px; background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+        }
+        .qr {width: 100%;}
+        .qr>img{width: 100%;border-radius: 20px;}
+        .title,.description{text-align: center;}
+        .title{font-weight: 700;}
+        .description{font-weight:400;}
+        body::before,body::after{content:"";position:fixed;left:0;right:0;background-color:black;}
+        body::before{top:0;height: 10px;}
+        body::after {bottom:0;height:10px;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="qr"><img src="/images/image-qr-code.png" alt="qr"></div>
+        <div class="title">Title</div>
+        <div class="description">Description</div>
+    </div>
+</body>
+</html>
